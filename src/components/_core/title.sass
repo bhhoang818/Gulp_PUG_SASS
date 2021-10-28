@@ -1,0 +1,33 @@
+.sec-title
+	position: relative
+	padding-top: r(50px)
+	padding-bottom: r(40px)
+	margin-bottom: r(47px)
+	.small-title
+		color: #333333
+		font-family: "Kaushan Script"
+		font-size: r(24px)
+		font-weight: 400
+		text-align: center
+	.big-title
+		color: #333333
+		font-size: r(30px)
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+	&::before
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translateX(-50%)
+		width: 60px
+		height: 3px
+		content: ''
+		background-color: #f38181
+	@media screen and ( max-width: 768px )
+		padding-bottom: r(20px)
+		margin-bottom: r(30px)
+		.small-title
+			font-size: r(20px)
+		.big-title
+			font-size: r(24px)

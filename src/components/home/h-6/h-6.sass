@@ -1,0 +1,52 @@
+.slide-mess
+	background-color: #f8f8f8
+	padding: r(70px) 0
+	.mySwiper
+		position: relative
+		.slide-inner
+			display: flex
+			.icon-mess
+				min-width: 150px
+				min-height: 150px
+				display: flex
+				align-items: center
+				justify-content: center
+				border: 3px solid #95e1d3
+			.mess-content
+				margin-left: 60px
+				.desc
+					color: #999999
+					font-size: 24px
+					font-weight: 300
+					font-style: italic
+					line-height: 36px
+					padding-bottom: 23px
+				.sign
+					padding-left: 130px
+					position: relative
+					color: #333333
+					font-family: "Kaushan Script"
+					font-size: 24px
+					font-weight: 500
+					&::after
+						position: absolute
+						content: ''
+						top: 50%
+						left: 0
+						width: 60px
+						height: 3px
+						background-color: #f38181
+						transform: translateY(-50%)
+			@media screen and ( max-width: 1024px )
+				.icon-mess
+					min-width: 75px
+					max-height: 75px
+					min-height: fit-content
+					padding: 10px
+			@media screen and ( max-width: 575px )
+				flex-direction: column
+				.icon-mess
+					width: fit-content
+					margin-bottom: 30px
+				.mess-content
+					margin-left: 0

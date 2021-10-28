@@ -1,0 +1,38 @@
+.work-sec
+	.list-work
+		flex-wrap: wrap
+		flex-direction: row
+		padding: 0 r(15px)
+		&_item
+			flex: 1 33.333%
+			padding: 0 r(15px)
+			display: flex
+			margin-bottom: r(50px)
+			margin-top: r(50px)
+			margin-left: auto
+			.icons
+				min-width: 32px
+				max-height: 31px
+				margin-right: r(20px)
+			.content
+				.title
+					padding-bottom: r(20px)
+					color: #333333
+					font-size: r(14px)
+					font-weight: 600
+					text-align: left
+					text-transform: uppercase
+				.desc
+					color: #999999
+					font-size: 15px
+					line-height: 24px
+					text-align: left
+	@media screen and ( max-width: 1024px )
+		.list-work
+			padding: 0
+			&_item
+				margin-bottom: r(30px)
+				margin-top: r(30px)
+				.content
+					.title
+						padding-bottom: r(10px)

@@ -1,0 +1,16 @@
+{
+	"font": [
+		"src/fonts/**"
+	],
+	"js": [
+		"src/_plugins/swiper-bundle.js",
+		"src/_plugins/mapping-listener.js",
+		"src/_plugins/mapping.js",
+		"node_modules/lazysizes/lazysizes.js"
+	],
+	"css": [
+		"src/_plugins/font.css",
+		"src/_plugins/swiper/swiper-bundle.min.css",
+		"src/_plugins/swiper-bundle.css"
+	]
+}

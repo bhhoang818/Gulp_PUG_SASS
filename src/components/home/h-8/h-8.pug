@@ -1,0 +1,51 @@
+section.section.ourteam-sec 
+	.sec-title 
+		p.small-title What we do
+		h3.big-title some of our work
+	.sec-desc 
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	.work-list.d-flex
+		-for(i=1; i<8; i++)
+			.work-item 
+				.image-item 
+					a(href="") 
+						img.lazyload(data-src="./images/work-"+i+".png", alt="")
+				.infor-item 
+					img.icon(src="./images/icons/PICTURE-WHITE.png", alt="")
+					a.name(href="") creatively designed
+					p Lorem ipsum dolor sit
+	.wrapper-container 
+		//- Swiper
+		.mySwiper
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.slide-inner 
+							.icon-mess 
+								img.lazyload(data-src="./images/work-thumb.png", alt="")
+							.mess-content 
+								p “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								p.sign Joshua Earle 
+					.swiper-slide 
+						.slide-inner 
+							.icon-mess 
+								img.lazyload(data-src="./images/work-thumb.png", alt="")
+							.mess-content 
+								p “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								p.sign Joshua Earle
+					.swiper-slide 
+						.slide-inner 
+								.icon-mess 
+									img.lazyload(data-src="./images/work-thumb.png", alt="")
+								.mess-content 
+									p “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+									p.sign Joshua Earle
+					.swiper-slide 
+						.slide-inner 
+							.icon-mess 
+								img.lazyload(data-src="./images/work-thumb.png", alt="")
+							.mess-content 
+								p “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+								p.sign Joshua Earle
+			.swiper-button-next
+			.swiper-button-prev

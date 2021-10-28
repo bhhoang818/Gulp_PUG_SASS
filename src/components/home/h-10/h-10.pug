@@ -1,0 +1,29 @@
+section.section.blog-sec
+	.wrapper-container 
+		.sec-title 
+			p.small-title Our stories
+			h3.big-title Latest blog
+		.wrapper-content 
+			-for(i=1; i<4; i++)
+				.column-md-4 
+					.blog-item 
+						.thumd-blog 
+							a(href="") 
+								img.lazyload(data-src="./images/blog-"+i+".png", alt="")
+							.date-box 
+								p 15
+								span Jan
+						.blog-content 
+							a(href="") Lorem ipsum dolor sit amet
+							p.desc Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.blog-view
+							a(href="") 
+								img(src="./images/icons/VIEW.png", alt="")
+								| 542
+							a(href="") 
+								img(src="./images/icons/comment.png", alt="")
+								| 17
+	.wrapper-map(setBackground="./images/map.png")
+		.map-content 
+			img(src="./images/icons/PIN 2.png", alt="")
+			p Open map

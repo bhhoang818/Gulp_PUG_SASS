@@ -1,0 +1,136 @@
+.slider-area
+	.swiper-container
+		.slide-inner
+			position: relative
+			.slide-img
+				width: 100vw
+				height: 100vh
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			.slide-content
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				z-index: 100
+				.title-small
+					color: $white
+					font-family: "Kaushan Script"
+					font-size: r(72px)
+					font-weight: 400
+					text-align: center
+
+				.title-big
+					position: relative
+					color: #ffffff
+					font-size: r(150px)
+					font-weight: 700
+					line-height: 140px
+					text-transform: uppercase
+					text-align: center
+					padding-bottom: r(70px)
+					margin-bottom: r(50px)
+					&::before
+						position: absolute
+						top: 100%
+						left: 50%
+						transform: translateX(-50%)
+						content: ''
+						width: 60px
+						height: 3px
+						background-color: #ffffff
+				.btn-more
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					padding: r(12px) r(32px)
+					border: 3px solid #ffffff
+					color: #ffffff
+					font-size: r(14px)
+					font-weight: 700
+					text-align: center
+					text-transform: uppercase
+					transition: ease-in-out all .5s
+					&:hover
+						background-color: #f38181
+						background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%)
+						color: $white
+				@media screen and ( max-width: 1199px )
+					.title-small
+						font-size: r(50px)
+					.title-big
+						font-size: r(75px)
+						line-height: 70px
+				@media screen and ( max-width: 768px )
+					top: 40%
+					.title-small
+						font-size: r(40px)
+					.title-big
+						font-size: r(50px)
+					.btn-more
+						padding: r(10px)
+		.swiper-pagination
+			bottom: 70px
+			.swiper-pagination-bullet
+				width: 258px
+				height: 3px
+				margin-left: 30px
+				margin-bottom: 60px
+				border-radius: 0
+				position: relative
+				overflow: visible
+				opacity: .5
+				background: white
+
+				.bullet-inner
+					display: flex
+					align-items: center
+					margin-top: 25px
+					p
+						color: $white
+						font-size: r(18px)
+						font-weight: 400
+						opacity: 1
+						text-transform: uppercase
+						&.number
+							font-size: r(24px)
+							font-weight: 700
+							padding-right: 5px
+
+				&::before
+					content: ""
+					display: block
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 0
+					left: 0
+
+				&:first-child
+					margin-left: 0
+				&-active
+					opacity: 1
+					background: rgba(#fff, 0.4)
+					&::before
+						opacity: 1
+						background-color: #f38181
+						animation: slide-progress 2s cubic-bezier(.3,0,.3,1) forwards
+					.swiper-paused
+						animation-play-state: paused
+				@media screen and ( max-width: 1199px )
+					width: 150px
+				@media screen and ( max-width: 768px )
+					margin-left: auto
+					.bullet-inner
+						margin-top: 10px
+
+				p
+@keyframes slide-progress
+	0%
+		// transform: translateX(-100%)
+		width: 0
+	100%
+		// transform: translateX(0)
+		width: 100%

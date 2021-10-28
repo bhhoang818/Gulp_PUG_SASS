@@ -1,0 +1,38 @@
+.counter-sec
+	padding: 0
+	background-color: #95e1d3
+	.conuter-block
+		flex-wrap: wrap
+		.counter-item
+			display: flex
+			flex-direction: column
+			align-items: center
+			flex: 1
+			padding: r(90px) 0
+			margin-left: auto
+			border-left: solid 1px $white
+			.counter
+				color: #ffffff
+				font-size: r(72px)
+				font-weight: 700
+				text-align: center
+				text-transform: uppercase
+			.text
+				color: #ffffff
+				font-size: r(14px)
+				font-weight: 400
+				text-align: center
+				text-transform: uppercase
+			&:last-child
+				border-right: solid 1px $white
+			@media screen and ( max-width: 1024px )
+				.counter
+					font-size: r(36px)
+			@media screen and ( max-width: 768px )
+				flex: 1 33.333%
+				&:first-child
+					border: none
+			@media screen and ( max-width: 568px )
+				flex: 1 50%
+				&:nth-child(3)
+					border: none

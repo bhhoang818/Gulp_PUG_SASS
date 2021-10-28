@@ -1,0 +1,54 @@
+.service-sec
+	.sec-desc
+		max-width: 954px
+		margin: 0 auto
+		padding-bottom: r(92px)
+		p
+			color: #999999
+			font-size: r(15px)
+			line-height: 24px
+			text-align: center
+		@media screen and ( max-width: 1024px )
+			max-width: 100%
+	.service-image
+		+img-ratio(380/570)
+	.side-navigation
+		li
+			border: 1px solid #e5e5e5
+			.accordion-title
+				padding: 1rem
+				display: flex
+				align-items: center
+				border-bottom: 1px solid #e5e5e5
+
+				.icon
+
+				span
+					margin-left: 15px
+					color: #333333
+					font-size: 14px
+					font-weight: 600
+					text-transform: uppercase
+				.arrow
+					margin-left: auto
+					transition: all .5s
+					transform: rotate(0deg)
+			.side-inner
+				display: none
+				padding: 20px
+				p
+					max-height: 140px
+					overflow-y: auto
+					color: #999999
+					font-size: r(15px)
+					font-weight: 300
+					font-style: italic
+					line-height: 24px
+					text-align: left
+			&.active
+				.accordion-title
+					.arrow
+						transform: rotate(180deg)
+			&:first-child
+				.side-inner
+					display: block

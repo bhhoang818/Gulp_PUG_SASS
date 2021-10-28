@@ -1,0 +1,18 @@
+section.section.about-sec
+	.wrapper-container 
+		.sec-title 
+			p.small-title What we do
+			h3.big-title Story about us
+		p.sec-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		.wrapper-content 
+			-for(i=1 ; i<4; i++)
+				.column-md-4 
+					.item 
+						.item-image 
+							a(href="") 
+								img.lazyload(data-src="./images/super-"+i+".png", alt="")
+						.item-content 
+							.icon 
+								img(src="./images/icons/user.png", alt="")
+							.text 
+								p super team

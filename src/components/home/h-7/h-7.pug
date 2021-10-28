@@ -1,0 +1,33 @@
+section.section.ourteam-sec 
+	.wrapper-container 
+		.sec-title 
+			p.small-title Who we are
+			h3.big-title Meet our team
+		.sec-desc 
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		.wrapper-content 
+			-for(i=1 ; i<4; i++)
+				.column-md-4 
+					.item 
+						.item-image 
+							img.lazyload(data-src="./images/ourteam_"+i+".png", alt="")
+						.item-content 
+							ul.icon.d-flex 
+								li 
+									a(href="") 
+										img(src="./images/icons/facebook.png", alt="")
+								li 
+									a(href="") 
+										img(src="./images/icons/twitter.png", alt="")
+								li 
+									a(href="") 
+										img(src="./images/icons/pinterest.png", alt="")
+								li 
+									a(href="") 
+										img(src="./images/icons/instagram.png", alt="")
+						.item-name 
+							p Christopher Campbell
+							span Graphic Design
+	.logo-partner 
+		.wrapper-container
+			img(src="./images/logo.png", alt="")
