@@ -1,18 +1,11 @@
-section.section.about-sec
+section.section.counter-sec
 	.wrapper-container 
-		.sec-title 
-			p.small-title What we do
-			h3.big-title Story about us
-		p.sec-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-		.wrapper-content 
-			-for(i=1 ; i<4; i++)
-				.column-md-4 
-					.item 
-						.item-image 
-							a(href="") 
-								img.lazyload(data-src="./images/super-"+i+".png", alt="")
-						.item-content 
-							.icon 
-								img(src="./images/icons/user.png", alt="")
-							.text 
-								p super team
+		.dichvu-block.d-flex
+			.dichvu-item
+				a(href="/dskv_tsdb.html") 
+					img.img-dichvu(src="./images/icons/ic_qlds_tsdb.png", alt="")
+					p.text DS tài khoản vay/TSĐB
+			.dichvu-item
+				a(href="/ds_qlyc.html") 
+					img.img-dichvu(src="./images/icons/ic_qlyc.png", alt="")
+					p.text Quản lý yêu cầu

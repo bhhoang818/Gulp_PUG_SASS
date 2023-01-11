@@ -1,16 +1,51 @@
-section.section.slide-mess 
+section.section.counter-sec
 	.wrapper-container 
-		//- Swiper
-		.mySwiper
-			.swiper-container
-				.swiper-wrapper
-					-for(i=1; i<5; i++)
-						.swiper-slide 
-							.slide-inner 
-								.icon-mess 
-									img(src="./images/icons/chat.png", alt="")
-								.mess-content 
-									p.desc “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-									p.sign Jon Doe
-				//- .swiper-button-next
-				//- .swiper-button-prev
+		.content-block
+			.row 
+				.column-xs-12
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Nhóm yêu cầu
+						input.form-control(disabled value="Tài sản đảm bảo")
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Loại yêu cầu
+						select.form-select.select2#drl-loaiyeucau(disabled data-fancybox data-src="#fancyboxOpen")
+							option(value="1") Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+							option(value="2") Hỗ trợ thực hiện các thủ tục lập ủy quyền/kê khai tài sản thừa kế...
+							option(value="3") Đề nghị HDBank phát hành văn bản đồng ý để KH cho thuê TSBĐ
+							option(value="4") Xác nhận bản chính HS TSBĐ đang được HDBank lưu trữ
+							option(value="5") Giải chấp hồ sơ TSBĐ
+							option(value="6") Sao y hồ sơ TSBĐ
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Thời điểm đề nghị thực hiện
+						.flatpickr
+							input.form-control.datepicker(type="text" placeholder="Chọn ngày")
+							a.input-button(title="toggle" data-toggle)
+								img.img-flatpickr(src="./images/icons/Calendar.png", alt="")
+						.txt-warning Lưu ý: Thời điểm đề nghị thực hiện phải hơn 3 ngày làm việc *
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Thông tin bổ sung
+						textarea.form-textarea(name="", cols="30", rows="3" placeholder="Nhập thông tin bổ sung")
+		.footer-block
+			.btn-box
+				a.btn.btn-cancel.btn-toggle(href="/dskv_tsdb.html") Hủy
+				a.btn.btn-confirm.btn-toggle(href="/result_tsdb.html") Gửi yêu cầu
+		
+		.popup#popup-loaiyeucau
+			.popup-container 
+				.popup-header 
+					.popup-title Loại yêu cầu
+					.popup-close.btn-close-popup
+						img(src="./images/icons/Close.png", alt="")
+				.popup-content 
+					ul.list-loaiyeucau
+						//- -for(i=1; i<6; i++)
+						//- 	li Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+						li(data-maloaiyeucau="1") Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+						li(data-maloaiyeucau="2") Hỗ trợ thực hiện các thủ tục lập ủy quyền/kê khai tài sản thừa kế...
+						li(data-maloaiyeucau="3") Đề nghị HDBank phát hành văn bản đồng ý để KH cho thuê TSBĐ
+						li(data-maloaiyeucau="4") Xác nhận bản chính HS TSBĐ đang được HDBank lưu trữ
+						li(data-maloaiyeucau="5") Giải chấp hồ sơ TSBĐ
+						li(data-maloaiyeucau="6") Sao y hồ sơ TSBĐ
+				.popup-footer
+					.btn-box
+						button.btn.btn-confirm.btn-toggle.btn-close.btn-close-popup Đóng

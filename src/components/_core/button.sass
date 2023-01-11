@@ -5,6 +5,7 @@
 	white-space: nowrap
 	vertical-align: middle
 	user-select: none
+	border: 0
 	&-toggle
 		margin-left: r(30px)
 		cursor: pointer
@@ -59,3 +60,24 @@
 		@media(max-width: 576px)
 			+ span
 				display: none
+	&-confirm
+		background: linear-gradient(180deg, #FFDE01 0%, #FAA71A 100%)
+		border-radius: 8px
+		width: 150px
+		height: 42px
+		line-height: 42px
+		color: rgba(0, 0, 0, 0.5)
+		font-size: 16px
+		font-weight: 700
+		margin-left: 0
+	&-cancel
+		background: $white
+		border: 1px solid #AAAAAA
+		border-radius: 8px
+		width: 150px
+		height: 42px
+		line-height: 42px
+		color: rgba(0, 0, 0, 0.5)
+		font-size: 16px
+		font-weight: 700
+		margin-left: 0

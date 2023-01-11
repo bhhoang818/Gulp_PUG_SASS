@@ -1,54 +1,48 @@
-.service-sec
-	.sec-desc
-		max-width: 954px
-		margin: 0 auto
-		padding-bottom: r(92px)
-		p
-			color: #999999
-			font-size: r(15px)
-			line-height: 24px
-			text-align: center
-		@media screen and ( max-width: 1024px )
-			max-width: 100%
-	.service-image
-		+img-ratio(380/570)
-	.side-navigation
-		li
-			border: 1px solid #e5e5e5
-			.accordion-title
-				padding: 1rem
-				display: flex
-				align-items: center
-				border-bottom: 1px solid #e5e5e5
-
-				.icon
-
-				span
-					margin-left: 15px
-					color: #333333
-					font-size: 14px
-					font-weight: 600
-					text-transform: uppercase
-				.arrow
-					margin-left: auto
-					transition: all .5s
-					transform: rotate(0deg)
-			.side-inner
-				display: none
-				padding: 20px
-				p
-					max-height: 140px
-					overflow-y: auto
-					color: #999999
-					font-size: r(15px)
-					font-weight: 300
-					font-style: italic
+.counter-sec
+	padding: 0
+	.wrapper-container
+		.list-tsdb-block
+			padding: 20px 0
+			display: flex
+			flex-direction: column
+			.list-tsdb-block-none
+				.txt-none
+					font-weight: 500
+					font-size: 16/14*1rem
 					line-height: 24px
-					text-align: left
-			&.active
-				.accordion-title
-					.arrow
-						transform: rotate(180deg)
-			&:first-child
-				.side-inner
-					display: block
+					color: #454F5B
+					margin-top: 10px
+			.dichvu-item
+				background: #FFFFFF
+				border-radius: 8px
+				padding: 15px
+				text-align: center
+				width: 100%
+				border: 1px solid #D3D8DE
+				border-radius: 8px
+				margin-bottom: 15px
+				.row-info
+					display: flex
+					justify-content: space-between
+					.txt-label
+						font-weight: 400
+						font-size: 13px
+						line-height: 18px
+						color: #7B7B7B
+					.txt-content
+						line-height: 24px
+						font-weight: 600
+						color: #2F2F2F
+				.btn-box
+					display: flex
+					justify-content: flex-end
+					margin-top: 15px
+					.btn-create-request
+						background: linear-gradient(180deg, #FFDE01 0%, #FAA71A 100%)
+						border-radius: 8px
+						width: 162px
+						height: 42px
+						line-height: 42px
+						color: rgba(0, 0, 0, 0.5)
+						font-size: 16px
+						font-weight: 700

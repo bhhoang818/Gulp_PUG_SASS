@@ -1,42 +1,46 @@
-section.section.work-sec 
+section.section.counter-sec
 	.wrapper-container 
-		.sec-title 
-			p.small-title We work with
-			h3.big-title Amazing Services
-		.list-work.d-flex
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/ALARM.png", alt="")
-				.content 
-					p.title Photography
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/LINEGRAPH.png", alt="")
-				.content 
-					p.title Web Design
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/COMPUTER.png", alt="")
-				.content 
-					p.title Creativity
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/BOOK.png", alt="")
-				.content 
-					p.title SEO
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/HOME.png", alt="")
-				.content 
-					p.title CSS/HTML
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-			.list-work_item 
-				.icons 
-					img(src="./images/icons/IMAGE.png", alt="")
-				.content 
-					p.title DIGITAL
-					p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+		.content-block
+			.row 
+				.column-xs-12
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Nhóm yêu cầu
+						input.form-control(disabled value="Khoản vay")
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Loại yêu cầu
+						select.form-select.select2#drl-loaiyeucau(disabled)
+							option(value="1") Thu nợ trước hạn
+							option(value="2") Điều chỉnh lịch trả nợ
+							option(value="3") Sao kê dư nợ vay
+							option(value="4") Chiết tính lãi
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Thời điểm đề nghị thực hiện
+						.flatpickr
+							input.form-control.datepicker(type="text" placeholder="Chọn ngày")
+							a.input-button(title="toggle" data-toggle)
+								img.img-flatpickr(src="./images/icons/Calendar.png", alt="")
+						.txt-warning Lưu ý: Thời điểm đề nghị thực hiện phải hơn 3 ngày làm việc *
+					.form-group.d-flex.flex-column.align-start.mb-4
+						label.mb-2 Thông tin bổ sung
+						textarea.form-textarea(name="", cols="30", rows="3" placeholder="Nhập thông tin bổ sung")
+		.footer-block
+			.btn-box
+				a.btn.btn-cancel.btn-toggle(href="/dskv_tsdb.html") Hủy
+				a.btn.btn-confirm.btn-toggle(href="/result.html") Gửi yêu cầu
+		.popup#popup-loaiyeucau
+			.popup-container 
+				.popup-header 
+					.popup-title Loại yêu cầu
+					.popup-close.btn-close-popup
+						img(src="./images/icons/Close.png", alt="")
+				.popup-content 
+					ul.list-loaiyeucau
+						//- -for(i=1; i<6; i++)
+						//- 	li Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+						li(data-maloaiyeucau="1") Thu nợ trước hạn
+						li(data-maloaiyeucau="2") Điều chỉnh lịch trả nợ
+						li(data-maloaiyeucau="3") Sao kê dư nợ vay
+						li(data-maloaiyeucau="4") Chiết tính lãi
+				.popup-footer
+					.btn-box
+						button.btn.btn-confirm.btn-toggle.btn-close.btn-close-popup Đóng

@@ -1,33 +1,25 @@
-section.section.ourteam-sec 
+section.section.counter-sec
 	.wrapper-container 
-		.sec-title 
-			p.small-title Who we are
-			h3.big-title Meet our team
-		.sec-desc 
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-		.wrapper-content 
-			-for(i=1 ; i<4; i++)
-				.column-md-4 
-					.item 
-						.item-image 
-							img.lazyload(data-src="./images/ourteam_"+i+".png", alt="")
-						.item-content 
-							ul.icon.d-flex 
-								li 
-									a(href="") 
-										img(src="./images/icons/facebook.png", alt="")
-								li 
-									a(href="") 
-										img(src="./images/icons/twitter.png", alt="")
-								li 
-									a(href="") 
-										img(src="./images/icons/pinterest.png", alt="")
-								li 
-									a(href="") 
-										img(src="./images/icons/instagram.png", alt="")
-						.item-name 
-							p Christopher Campbell
-							span Graphic Design
-	.logo-partner 
-		.wrapper-container
-			img(src="./images/logo.png", alt="")
+		.content-block
+			.top-info.d-flex.flex-column.justify-evenly.align-center
+				img(src="./images/HDBank.png", alt="")
+				img(src="./images/icons/ic_tick.png", alt="")
+				.txt-result QUÝ KHÁCH ĐÃ GỬI YÊU CẦU DỊCH VỤ THÀNH CÔNG
+			.content-info 
+				.row-info
+					.txt-content.txt-title Yêu cầu dịch vụ
+				.row-info
+					.txt-content 
+						span.txt-label Nhóm yêu cầu:
+						span TSĐB
+				.row-info
+					.txt-content 
+						span.txt-label Loại yêu cầu:
+						span Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+				.row-info
+					.txt-content 
+						span.txt-label Thời điểm đề nghị thực hiện:
+						span 12/12/2022
+		.footer-block
+			.btn-box
+				a.btn.btn-confirm.btn-go-home.btn-toggle(href="/index.html") Về trang chủ

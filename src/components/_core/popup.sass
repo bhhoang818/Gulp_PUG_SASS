@@ -1,0 +1,36 @@
+.popup
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	z-index: 1000
+	background: rgba($color: #000000, $alpha: .5)
+	display: none
+	.popup-container
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 1001
+		background: #fff
+		border-radius: 16px 16px 0px 0px
+		width: 90%
+		.popup-header
+			display: flex
+			justify-content: space-between
+			background: #C7262E
+			border-radius: 16px 16px 0px 0px
+			padding: 10px
+			color: white
+		.popup-content
+			text-align: center
+			padding: 20px
+		.popup-footer
+			padding: 15px
+			.btn-box
+				text-align: center
+
+				
