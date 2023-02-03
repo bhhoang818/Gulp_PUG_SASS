@@ -1,0 +1,84 @@
+section.section.counter-sec
+	.wrapper-container 
+		.search-container 
+			.search-box.column-xs-12.d-flex.justify-between.align-end
+				.form-group.d-flex.flex-column.align-start.mb-4
+					label.mb-2 Từ ngày
+					.flatpickr
+						input.form-control.datepicker(type="text" placeholder="Chọn ngày")
+						a.input-button(title="toggle" data-toggle)
+							img.img-flatpickr(src="./images/icons/Calendar.png", alt="")
+				.form-group.d-flex.flex-column.align-start.mb-4
+					label.mb-2 Đến ngày
+					.flatpickr
+						input.form-control.datepicker(type="text" placeholder="Chọn ngày")
+						a.input-button(title="toggle" data-toggle)
+							img.img-flatpickr(src="./images/icons/Calendar.png", alt="")
+				a.btn.btn-confirm.btn-toggle.btn-search(href="/ds_qlyc.html")
+					img(src="./images/icons/Calendar.png", alt="")
+			.txt-warning Lưu ý: Thời gian truy vấn tối đa không quá 90 ngày.
+		.list-tsdb-block.d-flex
+			.dichvu-item
+				.row-info.row-header
+					.txt-mayc
+						span.txt-label Mã yêu cầu:
+						span.txt-content 123456
+					.txt-status.badge.badge-warning Đang xử lý
+				.row-info
+					.txt-label Số tài khoản
+					.txt-content 0001218979-L22011111054-VND
+				.row-info
+					.txt-label Nhóm yêu cầu
+					.txt-content Khoản vay
+				.row-info
+					.txt-label Loại yêu cầu
+					.txt-content Xác nhận bản chính HS TSBĐ đang được HDBank lưu trữ
+				.row-info
+					.txt-label Thời điểm yêu cầu
+					.txt-content 12/12/2022
+				.row-info
+					.txt-label Thời điểm thực hiện
+					.txt-content 25/01/2027
+			.dichvu-item
+				.row-info.row-header
+					.txt-mayc
+						span.txt-label Mã yêu cầu:
+						span.txt-content 123456
+					.txt-status.badge.badge-success Thực hiện
+				.row-info
+					.txt-label Số tài khoản
+					.txt-content 0001218979
+				.row-info
+					.txt-label Nhóm yêu cầu
+					.txt-content Tài sản bảo đảm
+				.row-info
+					.txt-label Loại yêu cầu
+					.txt-content Hoàn công, đăng hộ
+				.row-info
+					.txt-label Thời điểm yêu cầu
+					.txt-content 12/12/2022
+				.row-info
+					.txt-label Thời điểm thực hiện
+					.txt-content 25/01/2027
+			.dichvu-item
+				.row-info.row-header
+					.txt-mayc
+						span.txt-label Mã yêu cầu:
+						span.txt-content 123456
+					.txt-status.badge.badge-danger Từ chối
+				.row-info
+					.txt-label Số tài khoản
+					.txt-content 0001218979-L22011111054-VND
+				.row-info
+					.txt-label Nhóm yêu cầu
+					.txt-content Tài sản bảo đảm
+				.row-info
+					.txt-label Loại yêu cầu
+					.txt-content Hoàn công, đăng hộ
+				.row-info
+					.txt-label Thời điểm yêu cầu
+					.txt-content 12/12/2022
+				.row-info
+					.txt-label Thời điểm thực hiện
+					.txt-content 25/01/2027
+		

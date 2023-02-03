@@ -1,0 +1,138 @@
+section.section-header 
+	.wrapper-container 
+		.header-box 
+			a.btn-back(href="")
+				img(src="./images/icons/arrow-left.png", alt="")
+			.txt-title Yêu cầu dịch vụ
+			a.btn-go-home(href="")
+				img.icon-home(src="./images/icons/home-black.png", alt="")
+section.section.counter-sec
+	.wrapper-container 
+		.page-yeucaudichvu 
+			.tab-list
+				.tab-item.active(ref="#panel1")
+					span.tab-title Khoản vay 
+					span.tab-number (0)
+				.tab-item(ref="#panel2")
+					span.tab-title TSĐB 
+					span.tab-number (0)
+			.panel-content-box
+				.panel-item#panel1.active
+					.empty-page-container
+						.empty-box
+							img.img-empty(src="./images/icons/Illustrations-state.png")
+							.txt-sub Bạn chưa có yêu cầu dịch vụ nào!
+						.introduction-box
+							.txt-title-introduction 
+								b 4 BƯỚC nhanh chóng
+							.txt-sub-introduction Gửi yêu cầu dịch vụ
+							ul.list-introductions 
+								li.item-introduction
+									.txt-number 1 
+									.txt-text
+										span Chọn 
+										b Khoản vay/TSĐB
+								li.item-introduction 
+									.txt-number 2
+									.txt-text
+										span Chọn 
+										b Loại dịch vụ
+								li.item-introduction 
+									.txt-number 3
+									.txt-text
+										span Chọn 
+										b Ngày thực hiện và thông tin bổ sung
+								li.item-introduction 
+									.txt-number 4 
+									.txt-text
+										b Xác nhận 
+										span thông tin và hoàn tất 
+				.panel-item#panel2
+					.empty-page-container
+						.empty-box
+							img.img-empty(src="./images/icons/Illustrations-state.png")
+							.txt-sub Bạn chưa có yêu cầu dịch vụ nào!
+						.introduction-box
+							.txt-title-introduction 
+								b 4 BƯỚC nhanh chóng
+							.txt-sub-introduction Gửi yêu cầu dịch vụ
+							ul.list-introductions 
+								li.item-introduction
+									.txt-number 1 
+									.txt-text
+										span Chọn 
+										b Khoản vay/TSĐB
+								li.item-introduction 
+									.txt-number 2
+									.txt-text
+										span Chọn 
+										b Loại dịch vụ
+								li.item-introduction 
+									.txt-number 3
+									.txt-text
+										span Chọn 
+										b Ngày thực hiện và thông tin bổ sung
+								li.item-introduction 
+									.txt-number 4 
+									.txt-text
+										b Xác nhận 
+										span thông tin và hoàn tất
+					
+			.footer-box
+				.btn-box
+					a.btn.btn-create-request.btn-toggle(href="/page2_ver2.html") Tạo yêu cầu
+			.popup#popup-chitietyeucau.popup-bottom
+				.popup-container 
+					.popup-header 
+						.popup-title 
+							img.icon-title(src="./images/icons/insert_comment.png")
+							span Chi tiết yêu cầu
+						.popup-close.btn-close-popup
+							img(src="./images/icons/close_black.png", alt="")
+					.popup-content 
+						.info-box.top-info-box
+							//- .row-info.row-header
+							//- 	.txt-mayc
+							//- 		span.txt-label Mã yêu cầu:
+							//- 		span.txt-content 123456
+							//- 	.txt-status.badge.badge-warning Đang xử lý
+							.row-info
+								.txt-label Mã yêu cầu
+								.txt-content 
+									span.text-copy 123456
+									img.icon-copy(src="./images/icons/content_copy.png")
+							.row-info
+								.txt-label Trạng thái
+								.txt-status.badge.badge-warning Đang xử lý
+							.row-info
+								.txt-label Loại yêu cầu
+								.txt-content Thu nợ trước hạn
+							.row-info
+								.txt-label Ngày yêu cầu
+								.txt-content 12/12/2022
+							.row-info
+								.txt-label Ngày thực hiện
+								.txt-content 25/01/2027
+							.row-info.feedback-box
+								.txt-label Nội dung phản hồi
+								.txt-content Yêu cầu thu nợ trước hạn với khoản vay bị từ chối vì hồ sơ chưa đầy đủ. Vui lòng liên hệ 19006060 để biết thêm chi tiết.
+						.info-box.bottom-info-box
+							.row-info.row-header
+								.txt-label Thông tin khoản vay
+							.row-info
+								.txt-label Số hợp đồng vay
+								.txt-content 
+									span.text-copy L32452352452U
+									img.icon-copy(src="./images/icons/content_copy.png")
+							.row-info
+								.txt-label Hạn mức hợp đồng
+								.txt-content 500,000,000 VND
+							.row-info
+								.txt-label Dư nợ hiện tại
+								.txt-content 421,261,698 VND
+							.row-info
+								.txt-label Ngày đáo hạn
+								.txt-content 16/12/2030
+							.row-info
+								.txt-label Lãi suất
+								.txt-content 12.6%/năm		

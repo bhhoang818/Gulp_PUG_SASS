@@ -1,0 +1,93 @@
+
+section.section-header 
+	.wrapper-container 
+		.header-box 
+			a.btn-back(href="")
+				img(src="./images/icons/arrow-left.png", alt="")
+			.txt-title Yêu cầu dịch vụ
+			a.btn-go-home(href="")
+				img.icon-home(src="./images/icons/home-black.png", alt="")
+section.section.counter-sec
+	.wrapper-container 
+		.page-yeucaudichvu.page2
+			.txt-title-page Chọn khoản vay cần yêu cầu dịch vụ
+			.content-box
+				.info-box
+					.txt-maso 04570411078
+					.txt-sotien 50,000,000 VND
+					.bottom-info 
+						.txt-laisuat
+							span Lãi suất 
+							span.txt-content-laisuat 12.6%/năm 
+						.txt-ngaydaohan
+							span Ngày đáo hạn
+							span.txt-content-ngaydaohan 01/12/2030
+						img.btn-next(src="./images/icons/chevron_right.png", alt="")
+				.info-box
+					.txt-maso 04570411078
+					.txt-sotien 50,000,000 VND
+					.bottom-info 
+						.txt-laisuat
+							span Lãi suất 
+							span.txt-content-laisuat 12.6%/năm 
+						.txt-ngaydaohan
+							span Ngày đáo hạn
+							span.txt-content-ngaydaohan 01/12/2030
+						img.btn-next(src="./images/icons/chevron_right.png", alt="")
+				.info-box
+					.txt-maso 04570411078
+					.txt-sotien 50,000,000 VND
+					.bottom-info 
+						.txt-laisuat
+							span Lãi suất 
+							span.txt-content-laisuat 12.6%/năm 
+						.txt-ngaydaohan
+							span Ngày đáo hạn
+							span.txt-content-ngaydaohan 01/12/2030
+						img.btn-next(src="./images/icons/chevron_right.png", alt="")
+			.popup#popup-loaiyeucau.popup-bottom
+				.popup-container 
+					.popup-header 
+						.popup-title 
+							img.icon-title(src="./images/icons/insert_comment.png")
+							span Gửi yêu cầu dịch vụ
+						.popup-close.btn-close-popup
+							img(src="./images/icons/close_black.png", alt="")
+					.popup-content 
+						.txt-place-holder Chọn loại yêu cầu
+						ul.list-loaiyeucau
+							//- -for(i=1; i<6; i++)
+							//- 	li Thực hiện thủ tục hoàn công/đăng hộ cho TSBĐ
+							li(data-maloaiyeucau="1") 
+								span.txt-name Thu nợ trước hạn
+								img(src="./images/icons/chevron_right_gray.png")
+							li(data-maloaiyeucau="2") 
+								span.txt-name Điều chỉnh lịch trả nợ
+								img(src="./images/icons/chevron_right_gray.png")
+							li(data-maloaiyeucau="3") 
+								span.txt-name Sao kê dư nợ vay
+								img(src="./images/icons/chevron_right_gray.png")
+							li(data-maloaiyeucau="4") 
+								span.txt-name Chiết tính lãi
+								img(src="./images/icons/chevron_right_gray.png")
+			.popup#popup-thongtinbosung.popup-bottom
+				.popup-container 
+					.popup-header 
+						.popup-title 
+							img.icon-title(src="./images/icons/insert_comment.png")
+							span.txt-popup-title  <Tên dịch vụ>
+						.popup-close.btn-close-popup
+							img(src="./images/icons/close_black.png", alt="")
+					.popup-content 
+						.form-group
+							.txt-label Chọn ngày đề nghị thực hiện:
+							.flatpickr
+								input.form-control.datepicker.hidden#txtNgayDeNghi(type="text" placeholder="Chọn ngày")
+								a.input-button(title="toggle" data-toggle)
+									//- img.img-flatpickr(src="./images/icons/Calendar.png", alt="")
+						.form-group
+							.txt-label Thông tin bổ sung
+							textarea#txtThongTinBoSung.form-textarea(name="", cols="30", rows="10", placeholder="Nhập thông tin (nếu có)")
+					.popup-footer
+						.btn-box
+							a.btn.btn-confirm.btn-toggle.btn-continue(href="/page3_ver2.html") Tiếp tục		

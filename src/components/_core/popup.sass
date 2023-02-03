@@ -32,5 +32,34 @@
 			padding: 15px
 			.btn-box
 				text-align: center
+	&.popup-bottom
+		.popup-container
+			top: auto
+			bottom: -100%
+			opacity: 0
+			visibility: hidden
+			transform: translate(-50%, 0%)
+			width: 100%
+			transition: all ease-in-out .5s
+			.popup-header
+				background: $white
+				color: #333333
+				padding: 20px
+				.popup-title
+					font-size: 16px
+					font-weight: 700
+					.icon-title 
+						margin-right: 5px
+			.popup-content
+				padding: 10px 20px 20px
+				.txt-place-holder
+					color: rgba(0, 0, 0, 0.5)
+					text-align: left
+					margin-bottom: 8px
+			&.active
+				bottom: 0
+				visibility: visible
+				opacity: 1
+
 
 				
